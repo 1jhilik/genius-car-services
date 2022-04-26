@@ -11,6 +11,7 @@ const Register = () => {
         loading,
         error,
       ] = useCreateUserWithEmailAndPassword(auth);
+      console.log(error);
     const navigate = useNavigate();
 
     const navigateLogin = () =>{
