@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 
 const Login = () => {
@@ -39,6 +40,7 @@ const Login = () => {
     return (
         <div className='container w-50 mx-auto'>
             <h2 className='text-primary text-center mt-2'>Please Login</h2>
+            
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
